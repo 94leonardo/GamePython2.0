@@ -1,0 +1,27 @@
+megaman-lite/
+│
+├── assets/                  # Recursos del juego
+│   ├── sprites/             # Sprites del personaje, enemigos, tiles, etc.
+│   │   └── player/          
+│   │       └── megaman_spritesheet.png
+│   └── sounds/              # Sonidos del juego
+│
+├── src/                     # Código fuente
+│   ├── __init__.py
+│   ├── main.py              # Punto de entrada del juego
+│   ├── settings.py          # Configuraciones globales
+│   ├── player.py            # Clase del personaje
+│   ├── level.py             # Clase del nivel (mapa, colisiones, tiles)
+│   └── utils.py             # Funciones auxiliares
+│
+├── README.md
+└── requirements.txt
+
+# 1. Crea un entorno virtual (carpeta 'venv')
+python3 -m venv venv
+
+# 2. Activa el entorno virtual
+source venv/bin/activate
+
+# 3. Instala pygame dentro del entorno
+pip install pygame
